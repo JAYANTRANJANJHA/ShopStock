@@ -27,19 +27,19 @@ const HomeScreen = () => {
 
       <View style={styles.buttonContainer}>
 
-        <Pressable style={[styles.btn, view === 0 ? { backgroundColor: "green" } : null]} onPress={() => setView(0)}>
+        <Pressable style={[styles.btn, view === 0 ? { backgroundColor: "#72c37aff" } : null]} onPress={() => setView(0)}>
           <Text style={[styles.btnText, view === 0 ? { color: "white" } : null]}>
             All Items
           </Text>
         </Pressable>
 
-        <Pressable style={[styles.btn, view === 1 ? { backgroundColor: "green" } : null]} onPress={() => setView(1)}>
+        <Pressable style={[styles.btn, view === 1 ? { backgroundColor: "#72c37aff" } : null]} onPress={() => setView(1)}>
           <Text style={[styles.btnText, view === 1 ? { color: "white" } : null]} >
             Low Stock
           </Text>
         </Pressable>
 
-        <Pressable style={[styles.btn, view === 2 ? { backgroundColor: "green" } : null]} onPress={() => setView(2)}>
+        <Pressable style={[styles.btn, view === 2 ? { backgroundColor: "#72c37aff" } : null]} onPress={() => setView(2)}>
           <Text style={[styles.btnText, view === 2 ? { color: "white" } : null]}>
             Create
           </Text>
@@ -78,10 +78,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 9,
     borderRadius: 50,
     borderWidth: 0.8,
-    borderColor: "green",
+    borderColor: "#72c37aff",
   },
   btnText: {
-    color: "green",
+    color: "#72c37aff",
     fontSize: 12,
 
   }
