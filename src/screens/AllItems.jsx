@@ -9,7 +9,7 @@ const AllItems = ({ data }) => {
       </View>
       <FlatList
         data={data}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
           <View style={[styles.itemContainer, { backgroundColor: item.stock < 8 ? "#FFCCCC" : "#D7F6BFFF" }]}>
             <Text style={styles.itemText}>{item.name}</Text>

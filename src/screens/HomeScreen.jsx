@@ -3,7 +3,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native'
 import AllItems from './AllItems'
 import CreateScreen from './CreateScreen'
 
-const data = [
+const initialData = [
   { id: 1, name: "wheat", stock: 5, unit: "kg" },
   { id: 2, name: "rice", stock: 10, unit: "kg" },
   { id: 3, name: "barley", stock: 7, unit: "kg" },
@@ -17,7 +17,7 @@ const data = [
 ];
 
 const HomeScreen = () => {
-
+  const [data, setData] = useState(initialData)
   const [view, setView] = useState(0)
 
   return (
@@ -48,7 +48,7 @@ const HomeScreen = () => {
       </View>
       {view === 0 && <AllItems data={data}/>}
       {view === 1 && <AllItems data={data.filter(item=>item.stock<8)} />}
-      {view === 2 && <CreateScreen />}
+      {view === 2 && <CreateScreen data={data} setdata={setData} />}
     </View>
   )
 }
