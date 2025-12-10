@@ -35,7 +35,8 @@
 
 **ShopStock** is a mobile inventory solution built with React Native. It allows business owners and warehouse managers to maintain visibility over their stock. The app focuses on simplicity and visual cues to help users make quick decisions.
 
-The system features an intelligent **Low Stock Alert** mechanism: items with a quantity less than **8** are automatically highlighted in <span style="color:#ff6666">**Red**</span>, while healthy stock levels are shown in <span style="color:#72c37a">**Green**</span>.
+The system features an intelligent **Low Stock Alert** mechanism:  
+Items with a quantity less than **8** are highlighted in <span style="color:#ff6666">**Red**</span>, while healthy stock levels appear in <span style="color:#72c37a">**Green**</span>.
 
 ---
 
@@ -49,9 +50,9 @@ The system features an intelligent **Low Stock Alert** mechanism: items with a q
       <td align="center"><strong>Create / Edit</strong></td>
     </tr>
     <tr>
-      <td><img src="https://placehold.co/250x500/ffffff/72c37a?text=Dashboard+View&font=roboto" alt="Dashboard" width="200"/></td>
-      <td><img src="https://placehold.co/250x500/ffffff/ffcccc?text=Low+Stock+Alerts&font=roboto" alt="Low Stock" width="200"/></td>
-      <td><img src="https://placehold.co/250x500/ffffff/CABFEE?text=Edit+Interface&font=roboto" alt="Create Screen" width="200"/></td>
+      <td><img src="https://placehold.co/250x500/ffffff/72c37a?text=Dashboard+View&font=roboto" width="200"/></td>
+      <td><img src="https://placehold.co/250x500/ffffff/ffcccc?text=Low+Stock+Alerts&font=roboto" width="200"/></td>
+      <td><img src="https://placehold.co/250x500/ffffff/CABFEE?text=Edit+Interface&font=roboto" width="200"/></td>
     </tr>
   </table>
 </div>
@@ -61,72 +62,67 @@ The system features an intelligent **Low Stock Alert** mechanism: items with a q
 ## ✨ Features
 
 | Feature | Description | Status |
-| :--- | :--- | :---: |
+|--------|-------------|--------|
 | **📦 Smart Dashboard** | Toggle views between All Items, Low Stock, and Create modes. | ✅ |
-| **🚨 Low Stock Logic** | Auto-filters items with `< 8` units and highlights them in red (`#FFCCCC`). | ✅ |
-| **📝 CRUD Operations** | Full capability to **C**reate, **R**ead, **U**pdate, and **D**elete inventory items. | ✅ |
-| **✏️ Edit Mode** | Tap any item to instantly load data into the form for modification. | ✅ |
-| **💾 State Management** | Uses React `useState` for real-time local data manipulation. | ✅ |
+| **🚨 Low Stock Logic** | Auto-filters items under 8 units and highlights them in red (`#FFCCCC`). | ✅ |
+| **📝 CRUD Operations** | Create, Read, Update, Delete inventory items. | ✅ |
+| **✏️ Edit Mode** | Tap any item to instantly load it into the form for editing. | ✅ |
+| **💾 State Management** | Real-time updates using React `useState`. | ✅ |
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Core:** React Native (0.76+)
-* **Language:** JavaScript (ES6+)
-* **Components:** Functional Components with Hooks
-* **Lists:** Optimized `FlatList` implementation
-* **Styling:** `StyleSheet` API
+- React Native (0.76+)
+- JavaScript (ES6+)
+- Functional Components + Hooks
+- FlatList for optimized rendering
+- StyleSheet API
 
 ---
 
 ## 🚀 Getting Started
 
-Follow these instructions to set up the project locally on your machine.
-
 ### Prerequisites
-
-* **Node.js**: v14 or newer
-* **Java JDK**: v11 (for Android)
-* **Android Studio**: For Android Emulator
-* **Xcode**: For iOS Simulator (Mac only)
+- Node.js v14+  
+- Java JDK 11  
+- Android Studio  
+- Xcode (for iOS)
 
 ### Installation
 
-1.  **Clone the repository**
+1. **Clone the repository**
     ```sh
-    git clone [https://github.com/JAYANTRANJANJHA/ShopStock.git](https://github.com/JAYANTRANJANJHA/ShopStock.git)
+    git clone https://github.com/JAYANTRANJANJHA/ShopStock.git
     cd ShopStock
     ```
 
-2.  **Install Dependencies**
+2. **Install dependencies**
     ```sh
     npm install
     # or
     yarn install
     ```
 
-3.  **Start Metro Bundler**
+3. **Start Metro bundler**
     ```sh
     npm start
     ```
 
-4.  **Run on Device/Emulator**
-    * **Android:**
-        ```sh
-        npm run android
-        ```
-    * **iOS:** (Requires CocoaPods installation)
-        ```sh
-        cd ios && pod install && cd ..
-        npm run ios
-        ```
+4. **Run on device/emulator**
+    **Android:**
+    ```sh
+    npm run android
+    ```
+    **iOS:**
+    ```sh
+    cd ios && pod install && cd ..
+    npm run ios
+    ```
 
 ---
 
 ## 📂 Project Structure
-
-A quick look at the top-level files and directories you'll work with.
 
 ```text
 ShopStock/
@@ -138,45 +134,62 @@ ShopStock/
 │       └── CreateScreen.jsx# Form logic for Add/Edit/Delete
 ├── package.json            # Dependencies and scripts
 └── README.md               # Project documentation
-
 ```
+
 ---
 
 ## 🔧 Usage Guide
 
-### 1. Viewing Stock
-The **Home Screen** defaults to the "All Items" view.
-* 🟢 **Green items:** Stock is safe (8 or more).
-* 🔴 **Red items:** Stock is critical (less than 8).
+### 1. Viewing Stock  
+- 🟢 **Green:** Stock ≥ 8  
+- 🔴 **Red:** Stock < 8  
 
-### 2. Adding an Item
-1. Tap the **Create** button in the navigation bar.
-2. Enter the **Item Name** (e.g., "Wheat").
-3. Enter the **Stock Amount** (e.g., "50").
-4. Tap **Add New Item**.
+The Home Screen automatically shows the **All Items** view.
 
-### 3. Editing/Deleting
-1. Navigate to the **Create** tab (lists are also visible here).
-2. Tap **Edit** on an item row to load its data into the input fields. Change values and tap **Edit Item**.
-3. Tap **Delete** to immediately remove an item from the inventory.
+---
+
+### 2. Adding an Item  
+1. Go to the **Create** tab  
+2. Enter **Item Name**  
+3. Enter **Stock Amount**  
+4. Tap **Add New Item**
+
+---
+
+### 3. Editing / Deleting  
+1. Open the **Create** tab  
+2. Tap **Edit** on any item  
+3. Update values and tap **Edit Item**  
+4. Tap **Delete** to remove the item permanently  
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open-source community amazing.  
+Any contribution you make is **greatly appreciated**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the project  
+2. Create your feature branch  
+   ```sh
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your changes  
+   ```sh
+   git commit -m "Add some AmazingFeature"
+   ```
+4. Push to your branch  
+   ```sh
+   git push origin feature/AmazingFeature
+   ```
+5. Open a Pull Request  
 
 ---
 
 ## 📝 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the **MIT License**.  
+See `LICENSE` for more information.
 
 ---
 
