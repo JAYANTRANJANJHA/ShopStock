@@ -1,10 +1,60 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# ShopStock
 
-# Getting Started
+Small React Native inventory demo app to track items and stock levels. Focused on a compact codebase for listing, filtering, and adding/editing/deleting inventory items.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Features
+- View all items and quantities
+- Filter to show low-stock items (stock < 8)
+- Add, edit and delete items
+- Low-stock visual highlighting in lists
 
-## Step 1: Start Metro
+## Quick Start (Windows PowerShell)
+1. Install dependencies:
+```powershell
+npm install
+```
+2. Start Metro:
+```powershell
+npm start
+```
+3. Build and run the app:
+```powershell
+npm run android
+```
+or for iOS (after installing CocoaPods):
+```powershell
+npm run ios
+```
+
+## Files of interest
+- `App.jsx` / `index.js` — App entrypoint
+- `src/screens/HomeScreen.jsx` — Dashboard and view toggles
+- `src/screens/AllItems.jsx` — Item list display (uses `FlatList`)
+- `src/screens/CreateScreen.jsx` — Add / edit / delete item UI and logic
+- `package.json` — scripts and dependencies
+- `__tests__/App.test.tsx` — example test file
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js v14+
+- npm or yarn
+- React Native CLI (for device/emulator runs)
+- Android Studio (Android SDK) or Xcode (for iOS)
+- Java JDK (for Android builds)
+
+### Clone and install
+```bash
+git clone https://github.com/JAYANTRANJANJHA/ShopStock.git
+cd ShopStock
+npm install
+# or
+yarn install
+```
+
+### Step 1: Start Metro
 
 First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
@@ -18,11 +68,11 @@ npm start
 yarn start
 ```
 
-## Step 2: Build and run your app
+### Step 2: Build and run your app
 
 With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
 
-### Android
+#### Android
 
 ```sh
 # Using npm
@@ -32,7 +82,7 @@ npm run android
 yarn android
 ```
 
-### iOS
+#### iOS
 
 For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
 
@@ -62,7 +112,7 @@ If everything is set up correctly, you should see your new app running in the An
 
 This is one way to run your app — you can also build it directly from Android Studio or Xcode.
 
-## Step 3: Modify your app
+### Step 3: Modify your app
 
 Now that you have successfully run the app, let's make changes!
 
