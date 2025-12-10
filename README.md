@@ -1,147 +1,140 @@
-# ShopStock
+<a name="readme-top"></a>
 
-Small React Native inventory demo app to track items and stock levels. Focused on a compact codebase for listing, filtering, and adding/editing/deleting inventory items.
+<div align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/2897/2897785.png" alt="Logo" width="80" height="80">
 
-## Features
-- View all items and quantities
-- Filter to show low-stock items (stock < 8)
-- Add, edit and delete items
-- Low-stock visual highlighting in lists
+  <h1 align="center">ShopStock</h1>
 
-## Quick Start (Windows PowerShell)
-1. Install dependencies:
-```powershell
-npm install
-```
-2. Start Metro:
-```powershell
-npm start
-```
-3. Build and run the app:
-```powershell
-npm run android
-```
-or for iOS (after installing CocoaPods):
-```powershell
-npm run ios
-```
+  <p align="center">
+    <strong>Smart Inventory Management for React Native</strong>
+    <br />
+    A lightweight, efficient mobile application to track stock levels, manage items, and visualize inventory status in real-time.
+    <br />
+    <br />
+    <a href="#-getting-started"><strong>Get Started »</strong></a>
+    ·
+    <a href="#-features"><strong>Explore Features</strong></a>
+    ·
+    <a href="https://github.com/JAYANTRANJANJHA/ShopStock/issues"><strong>Report Bug</strong></a>
+  </p>
+</div>
 
-## Files of interest
-- `App.jsx` / `index.js` — App entrypoint
-- `src/screens/HomeScreen.jsx` — Dashboard and view toggles
-- `src/screens/AllItems.jsx` — Item list display (uses `FlatList`)
-- `src/screens/CreateScreen.jsx` — Add / edit / delete item UI and logic
-- `package.json` — scripts and dependencies
-- `__tests__/App.test.tsx` — example test file
+<div align="center">
+
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+
+</div>
 
 ---
 
-## Getting Started
+## 📖 About The Project
+
+**ShopStock** is a mobile inventory solution built with React Native. It allows business owners and warehouse managers to maintain visibility over their stock. The app focuses on simplicity and visual cues to help users make quick decisions.
+
+The system features an intelligent **Low Stock Alert** mechanism: items with a quantity less than **8** are automatically highlighted in <span style="color:#ff6666">**Red**</span>, while healthy stock levels are shown in <span style="color:#72c37a">**Green**</span>.
+
+---
+
+## 📱 Interface & Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><strong>Dashboard</strong></td>
+      <td align="center"><strong>Low Stock View</strong></td>
+      <td align="center"><strong>Create / Edit</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://placehold.co/250x500/ffffff/72c37a?text=Dashboard+View&font=roboto" alt="Dashboard" width="200"/></td>
+      <td><img src="https://placehold.co/250x500/ffffff/ffcccc?text=Low+Stock+Alerts&font=roboto" alt="Low Stock" width="200"/></td>
+      <td><img src="https://placehold.co/250x500/ffffff/CABFEE?text=Edit+Interface&font=roboto" alt="Create Screen" width="200"/></td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## ✨ Features
+
+| Feature | Description | Status |
+| :--- | :--- | :---: |
+| **📦 Smart Dashboard** | Toggle views between All Items, Low Stock, and Create modes. | ✅ |
+| **🚨 Low Stock Logic** | Auto-filters items with `< 8` units and highlights them in red (`#FFCCCC`). | ✅ |
+| **📝 CRUD Operations** | Full capability to **C**reate, **R**ead, **U**pdate, and **D**elete inventory items. | ✅ |
+| **✏️ Edit Mode** | Tap any item to instantly load data into the form for modification. | ✅ |
+| **💾 State Management** | Uses React `useState` for real-time local data manipulation. | ✅ |
+
+---
+
+## 🛠️ Tech Stack
+
+* **Core:** React Native (0.76+)
+* **Language:** JavaScript (ES6+)
+* **Components:** Functional Components with Hooks
+* **Lists:** Optimized `FlatList` implementation
+* **Styling:** `StyleSheet` API
+
+---
+
+## 🚀 Getting Started
+
+Follow these instructions to set up the project locally on your machine.
 
 ### Prerequisites
-- Node.js v14+
-- npm or yarn
-- React Native CLI (for device/emulator runs)
-- Android Studio (Android SDK) or Xcode (for iOS)
-- Java JDK (for Android builds)
 
-### Clone and install
-```bash
-git clone https://github.com/JAYANTRANJANJHA/ShopStock.git
-cd ShopStock
-npm install
-# or
-yarn install
-```
+* **Node.js**: v14 or newer
+* **Java JDK**: v11 (for Android)
+* **Android Studio**: For Android Emulator
+* **Xcode**: For iOS Simulator (Mac only)
 
-### Step 1: Start Metro
+### Installation
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+1.  **Clone the repository**
+    ```sh
+    git clone [https://github.com/JAYANTRANJANJHA/ShopStock.git](https://github.com/JAYANTRANJANJHA/ShopStock.git)
+    cd ShopStock
+    ```
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+2.  **Install Dependencies**
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
 
-```sh
-# Using npm
-npm start
+3.  **Start Metro Bundler**
+    ```sh
+    npm start
+    ```
 
-# OR using Yarn
-yarn start
-```
+4.  **Run on Device/Emulator**
+    * **Android:**
+        ```sh
+        npm run android
+        ```
+    * **iOS:** (Requires CocoaPods installation)
+        ```sh
+        cd ios && pod install && cd ..
+        npm run ios
+        ```
 
-### Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## 📂 Project Structure
 
-#### Android
+A quick look at the top-level files and directories you'll work with.
 
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-#### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-### Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+```text
+ShopStock/
+├── App.jsx                 # Entry point
+├── src/
+│   └── screens/
+│       ├── HomeScreen.jsx  # Main Dashboard & View Controller
+│       ├── AllItems.jsx    # Component to render inventory lists
+│       └── CreateScreen.jsx# Form logic for Add/Edit/Delete
+├── package.json            # Dependencies and scripts
+└── README.md               # Project documentation
