@@ -139,7 +139,7 @@ ShopStock/
 ├── package.json            # Dependencies and scripts
 └── README.md               # Project documentation
 
-
+```
 ---
 
 ## 🔧 Usage Guide
