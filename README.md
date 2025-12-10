@@ -138,3 +138,46 @@ ShopStock/
 │       └── CreateScreen.jsx# Form logic for Add/Edit/Delete
 ├── package.json            # Dependencies and scripts
 └── README.md               # Project documentation
+
+
+🔧 Usage Guide
+1. Viewing Stock
+The Home Screen defaults to the "All Items" view.
+
+Green items: Stock is safe (8 or more).
+
+Red items: Stock is critical (less than 8).
+
+2. Adding an Item
+Tap the Create button in the navigation bar.
+
+Enter the Item Name (e.g., "Wheat").
+
+Enter the Stock Amount (e.g., "50").
+
+Tap Add New Item.
+
+3. Editing/Deleting
+Navigate to the Create tab (lists are also visible here).
+
+Tap Edit on an item row to load its data into the input fields. Change values and tap Edit Item.
+
+Tap Delete to immediately remove an item from the inventory.
+
+🤝 Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+Fork the Project
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+
+Push to the Branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+📝 License
+Distributed under the MIT License. See LICENSE for more information.
+
+<div align="center"> <p>Built with ❤️ by <a href="https://www.google.com/search?q=https://github.com/JAYANTRANJANJHA">Jayant Ranjan Jha</a></p> </div>
