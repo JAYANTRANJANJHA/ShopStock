@@ -140,44 +140,46 @@ ShopStock/
 └── README.md               # Project documentation
 
 
-🔧 Usage Guide
-1. Viewing Stock
-The Home Screen defaults to the "All Items" view.
+---
 
-Green items: Stock is safe (8 or more).
+## 🔧 Usage Guide
 
-Red items: Stock is critical (less than 8).
+### 1. Viewing Stock
+The **Home Screen** defaults to the "All Items" view.
+* 🟢 **Green items:** Stock is safe (8 or more).
+* 🔴 **Red items:** Stock is critical (less than 8).
 
-2. Adding an Item
-Tap the Create button in the navigation bar.
+### 2. Adding an Item
+1. Tap the **Create** button in the navigation bar.
+2. Enter the **Item Name** (e.g., "Wheat").
+3. Enter the **Stock Amount** (e.g., "50").
+4. Tap **Add New Item**.
 
-Enter the Item Name (e.g., "Wheat").
+### 3. Editing/Deleting
+1. Navigate to the **Create** tab (lists are also visible here).
+2. Tap **Edit** on an item row to load its data into the input fields. Change values and tap **Edit Item**.
+3. Tap **Delete** to immediately remove an item from the inventory.
 
-Enter the Stock Amount (e.g., "50").
+---
 
-Tap Add New Item.
+## 🤝 Contributing
 
-3. Editing/Deleting
-Navigate to the Create tab (lists are also visible here).
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Tap Edit on an item row to load its data into the input fields. Change values and tap Edit Item.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Tap Delete to immediately remove an item from the inventory.
+---
 
-🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+## 📝 License
 
-Fork the Project
+Distributed under the MIT License. See `LICENSE` for more information.
 
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
+---
 
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-📝 License
-Distributed under the MIT License. See LICENSE for more information.
-
-<div align="center"> <p>Built with ❤️ by <a href="https://www.google.com/search?q=https://github.com/JAYANTRANJANJHA">Jayant Ranjan Jha</a></p> </div>
+<div align="center">
+  <p>Built with ❤️ by <a href="https://github.com/JAYANTRANJANJHA">Jayant Ranjan Jha</a></p>
+</div>
